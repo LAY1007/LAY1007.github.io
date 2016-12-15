@@ -1,0 +1,26 @@
+{
+  "name": "LAY1007.github.io",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LAY1007/LAY1007.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LAY1007/LAY1007.github.io/issues"
+  },
+  "homepage": "https://github.com/LAY1007/LAY1007.github.io#readme"
+}

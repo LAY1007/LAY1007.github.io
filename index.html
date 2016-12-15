@@ -1,32 +1,193 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>myBlog</title>
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body style="background:url(./images/counter-bg.jpg)">
+<!--nav-->
+<header>
+    <nav class="navbar navbar-inverse " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">myBlog</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">项目展示</a></li>
+                    <li><a href="#">文章</a></li>
+                    <li><a href="#">联系我</a></li>
+                </ul>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+            </div>
+        </div>
+    </nav>
+</header>
+<!--content-slide-->
+<!--<section class="slide" style="background:red">
+    <div id="myCarousel" class="carousel-fade carousel slide">
+        &lt;!&ndash; 轮播（Carousel）指标 &ndash;&gt;
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        &lt;!&ndash; 轮播（Carousel）项目 &ndash;&gt;
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="http://www.wpmomo.com/wp-content/uploads/2015/04/slider2.png" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="http://www.wpmomo.com/wp-content/uploads/2015/04/slider2.png" alt="Second slide">
+            </div>
+        </div>
+        &lt;!&ndash; 轮播（Carousel）导航 &ndash;&gt;
 
-    <title>个人博客</title>
-  </head>
+    </div>
+</section>-->
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Lay1007.GitHub.io</h1>
-        <h2>个人博客</h2>
-        <a href="https://github.com/LAY1007" class="button"><small>Follow me on</small> GitHub</a>
-      </div>
-    </header>
+<!--项目展示-->
+<section id="project" class="project">
+    <div class="wow zoomInDown col-md-12 text-center">
+        <span class="addLine col-md-1 col-md-push-1"></span>
+        <h2 class="col-md-10">项目展示</h2>
+        <span class="addLine col-md-1"></span>
+    </div>
+    <ul class="col-md-offset-3">
+        <li class="wow bounceInDown">
+            <figure>
+                <a href="" target="_blank"><img src="images/download-button.png"></a>
+                <figcaption>
+                    <h3><a href="" target="_blank">Demo-puz</a></h3>
+                    <h5>项目描述：H5-Demo 智力游戏<br/> </h5>
+                    <h5>负责：整个项目的设计与制作</h5>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="wow pulse">
+            <figure>
+                <a href="" target="_blank"><img src="images/download-button.png"></a>
+                <figcaption>
+                    <h3><a href="" target="_blank">Demo-puz</a></h3>
+                    <h5>项目描述：H5-Demo 智力游戏<br/> </h5>
+                    <h5>负责：整个项目的设计与制作</h5>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="wow flipInX">
+            <figure>
+                <a href="" target="_blank"><img src="images/download-button.png"></a>
+                <figcaption>
+                    <h3><a href="" target="_blank">Demo-puz</a></h3>
+                    <h5>项目描述：H5-Demo 智力游戏<br/> </h5>
+                    <h5>负责：整个项目的设计与制作</h5>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+</section>
+<!--wenzhang-->
+<section>
+    <div id="content" class="row-fluid trf">
+        <div class="wow zoomInDown col-md-12 text-center">
+            <h2>文章</h2>
+        </div>
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner ">
+                <div class="item active  trf">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>第一篇文章</h4>
+                                <p>我是打酱油的我是打酱油的我是打酱油的我是打酱油的我是打酱油的</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>第一篇文章</h4>
+                                <p>我是打酱油的我是打酱油的我是打酱油的我是打酱油的我是打酱油的</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>第一篇文章</h4>
+                                <p>我是打酱油的我是打酱油的我是打酱油的我是打酱油的我是打酱油的</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>第一篇文章</h4>
+                                <p>我是打酱油的我是打酱油的我是打酱油的我是打酱油的我是打酱油的</p>
+                            </div>
 
-  
+                        </div>
 
-  
-  </body>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">第一行第一列</div>
+                            <div class="col-md-3">第一行第2列</div>
+                            <div class="col-md-3">第一行第3列</div>
+                            <div class="col-md-3">第一行第4列</div>
+                        </div>
+                        <div class="row">第二行</div>
+                        <div class="row">第3行</div>
+
+                        <div class="row">第4行</div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">第一行第一列</div>
+                            <div class="col-md-3">第一行第2列</div>
+                            <div class="col-md-3">第一行第3列</div>
+                            <div class="col-md-3">第一行第4列</div>
+                        </div>
+                        <div class="row">第二行</div>
+                        <div class="row">第3行</div>
+
+                        <div class="row">第4行</div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）指标 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;
+            </a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;
+            </a>
+        </div>
+
+    </div>
+</section>
+<!--<div class="col-md-3">
+    <h2>Sidebar</h2>
+    <ul class="nav nav-tabs nav-stacked">
+        <li><a href='#'>Another Link 1</a></li>
+        <li><a href='#'>Another Link 2</a></li>
+        <li><a href='#'>Another Link 3</a></li>
+    </ul>
+</div>-->
+</body>
 </html>
+<script src="js/jquery.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
